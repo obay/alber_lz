@@ -1,3 +1,3 @@
 variable "root_id" {
-  type    = string
+  type = string
 }

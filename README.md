@@ -10,9 +10,12 @@ This module is used to deploy an Azure Landing Zone.
 
 ## Usage
 
-First copy the terraform.tfvars.example file to terraform.tfvars and fill in the values.
-
-then run the following commands:
+1. First copy the terraform.tfvars.example file to terraform.tfvars and fill in the values.
+2. Login to Azure using the Azure CLI.
+```bash
+az login
+```
+3. Then run the following commands:
 ```bash
 terraform init
 terraform plan

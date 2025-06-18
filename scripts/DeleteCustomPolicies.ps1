@@ -43,7 +43,8 @@
 
 # Function to get all management groups
 function Get-AllManagementGroups {
-    $managementGroups = Get-AzManagementGroup
+    # Retrieve all management groups, including nested groups
+    $managementGroups = Get-AzManagementGroup -Recurse
     return $managementGroups
 }
 
